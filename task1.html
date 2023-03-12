@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="row">
+                <h5 class="col-7 mt-5 pb-2">Billing address</h5>
+                <h5 class="col-4 mt-5 mx-4 px-4 ">Your cart</h5>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname" style="border-radius: 3px;" class="form-control">
+                        </div>
+                        <div class="col">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" style="border-radius: 3px;" class="form-control">
+                    </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label class="sr-only" for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div style="border-radius: 3px;" class="input-group-text mt-2">@</div>
+                            </div>
+                            <input type="text" name="username" id="username" style="border-radius:2px;"class="form-control mt-2 placeholder-opacity-0" placeholder="Username">
+                        </div>
+                    </div>
+<div class="mt-3">
+    <label for="email">Email (Optional)</label>
+    <input type="email" name="email" id="email" style="border-radius: 3px;" class="form-control placeholder-opacity-0" placeholder="you@example.com">
+</div>
+<div class="mt-3">
+    <label for="address">Address</label>
+<input type="text" name="address" id="address" class="form-control mt-2 placeholder-opacity-0" style="border-radius:3px;" placeholder="1234 Main St">
+</div>
+<div class="mt-3">
+    <label for="address2">Address2 (Optional)</label>
+    <input type="text" name="address2" id="address2" style="border-radius: 3px;" class="form-control placeholder-opacity-0" placeholder="Apartment or suite">
+</div>
+<div class="row">
+
+<div class="col-lg-5 col-md-3 mt-3">
+    
+    <label for="country">Country</label>
+    <br>
+    <select style="border-radius:3px;" name="country" id="country" class="form control mt-2">
+    <option selected>United States</option>
+    <option value="1">India</option>
+    <option value="2">Korea</option>
+    <option value="3">Japan</option>
+    </select>
+</div>
+<div class=" col-lg-4 col-md-3 mt-3">
+    <label for="state">State</label>
+    <br>
+    <select style="border-radius:3px;" name="state" id="state" class="form control mt-2">
+    <option selected>California</option>
+    <option value="1">Texas</option>
+    <option value="2">New York</option>
+    <option value="3">Washington</option>
+    </select>
+</div>
+
+<div class="col-lg-3 col-md-2 mt-3">
+    <label for="zip">Zip</label>
+    <input type="number" name="zip" id="zip" style="border-radius: 3px;" class="form-control mt-2" minlength="1" maxlength="5">
+</div>
+</div>
+
+
+<hr class="take">
+<div class="form-group">
+    <div class="form-check">
+        <label class="form-check-label" for="check">Shipping address is the same as my billing <address></address></label>
+        <input class="form-check-input" type="checkbox" id="check" required>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label" for="check">Save this information for the next time <address></address></label>
+        <input class="form-check-input" type="checkbox" id="check" required>
+    </div>
+    <hr class="take">
+    <h5 class="mt-4 mb-2">Payment</h5>    
+</div>
+<div class="custom-control ">
+    <input type="radio" name="credit" id="credit" class="custom-control-input">
+    <label class="custom-control-label" for="credit">Credit card</label>
+</div>
+<div class="custom-control ">
+    <input type="radio" name="debit" id="debit" class="custom-control-input">
+    <label class="custom-control-label" for="debit">Debit card </label>
+</div>
+<div class="custom-control  ">
+    <input type="radio" name="paybal" id="paybal" class="custom-control-input">
+    <label class="custom-control-label" for="paybal">Paybal </label>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+    <label for="cardname">Name on card</label>
+    <br>
+    <input type="text" style="border-radius: 3px;" name="cardname" id="cardname">
+</div>
+<div class="col-6">
+    <label for="cardnum">Credit card number</label>
+    <br>
+    <input type="text" style="border-radius: 3px;" name="cardname" id="cardnum">
+                </div>
+ <div >Full name as displayed on card</div>
+
+ <div class="mt-2 col-3">
+    <label for="expiration">Expiration</label>
+    <input class="inputCard form-control" name="exp" style="border-radius: 3px;" type="tel"
+        pattern="[0-9]*" maxlength="4" id="expiration" />
+</div>
+<div class=" mt-2 col-3">
+    <label for="cvv">CVV</label>
+    <input class="required form-control" name="cvv" style="border-radius: 3px;" id="cvv"
+        type="number" maxlength="3" pattern="([0-9]|[0-9]|[0-9])" />
+</div>
+<hr class="take">
+<button type="button" style="border-radius: 3px;" name="checkcontinue"
+    class="btn btn-primary btn-lg">Continue to checkout</button>
+
+</div>
+    
+ 
+
+
+ <div class="card col-4 mt-2  mx-5  " style="border-radius: 3px; max-height: 19rem; width: 18rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item ">Product name <span style="margin-left: 100px;"
+                >$12</span> <br>
+            <small class="form-text text-muted">Brief description</small>
+        </li>
+        <li class="list-group-item">Second product <span style="margin-left: 88px;"
+                >$8</span><br>
+            <small class="form-text text-muted">Brief description</small>
+        </li>
+        <li class="list-group-item">Third item <span style="margin-left: 130px;"
+               >$5</span><br>
+            <small class="form-text text-muted">Brief description</small>
+        </li>
+        <li class="list-group-item text-success">Promo code <span style="margin-left: 110px;"
+                >-$5</span><br>
+            <small class="form-text text-muted">EXAMPLECODE</small>
+        </li>
+        <li class="list-group-item">Total(USD) <span style="margin-left: 125px;"
+               >$20</span></li>
+    </ul>
+
+<div class="input-group my-5 border-style:double;">
+    <input type="text" class="form-control" placeholder="Promo code">
+    <span class="input-group-text btn btn-secondary" id="basic-addon2">Redeem</span>
+</div>
+</div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+    
+</body>
+</html>
